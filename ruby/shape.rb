@@ -6,7 +6,7 @@ class Shape
   def initialize; end
 
   def print
-    puts "Name: #{self.class.name} Perimeter: #{perimeter} Area: #{area}"
+    puts "Name: #{self.class.name} Perimeter: #{!perimeter.nil? ? perimeter : 'Undefined'} Area: #{!area.nil? ? area : 'undefined'}"
   end
 
   def perimeter
