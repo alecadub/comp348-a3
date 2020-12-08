@@ -1,4 +1,4 @@
-public aspect Behaviour {
+public privileged aspect Behaviour {
     declare parents:Rectangle implements Shape;
     declare parents:Circle implements Shape;
 
@@ -9,5 +9,4 @@ public aspect Behaviour {
     public String Circle.getName() {
         return "Circle";
     }
-
 }

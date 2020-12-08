@@ -1,5 +1,5 @@
 public class Rectangle{
-    public double width, height;
+    private double width, height;
 
     public Rectangle(double width, double height) {
         this.width = width;

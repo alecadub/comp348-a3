@@ -1,4 +1,4 @@
-public aspect PrintBehavior {
+public privileged aspect PrintBehavior {
     public String Circle.toString() {
         return (this.getName() + "(" + (int) this.radius + ")");
     }
