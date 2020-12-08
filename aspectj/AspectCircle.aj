@@ -1,5 +1,5 @@
 
-public priviliged aspect AspectCircle {
+public privileged aspect AspectCircle {
 	declare parents:Circle implements Shape;
 
 	public int Circle.getArea(){
