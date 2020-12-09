@@ -55,20 +55,22 @@ public privileged aspect Behaviour {
 		    	proceed(r);
 		    }
 		}
-    
-
-// Counter for ID
-
-	Class ObjCounter() {
-	
-		private static int instanceCounter = 0;
-		int counter = 0;
 		
-	      ObjCounter() {
-	      	
-		  instanceCounter++;
-		  counter = instanceCounter;
-	     }
-	 }    
-		 	      
-}
+// ID Counter		
+    
+	private static int id;
+
+    	     public int Rectangle.getId(){
+    	         return id;
+    	     }
+   	    
+	     public int Circle.getId(){
+        	 return id;
+    	     }
+   
+   	pointcut callConstr(): execution(Shape+.new(..)) && this(Shape+);
+   	    after(): callConstr(){
+            id++;
+            System.out.println(id);
+    }
+}    
