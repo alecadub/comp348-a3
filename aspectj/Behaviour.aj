@@ -10,6 +10,10 @@ public privileged aspect Behaviour {
         return "Circle";
     }
     
+// Implement the logic for calculating the area of a circle
+
+	
+    
 // If height, width, or radius is 0, return 0 for perimeter and radius
 
     	public double Rectangle.getPerimeter() {
@@ -31,4 +35,19 @@ public privileged aspect Behaviour {
 	 		if (this.radius == 0)
 	 			return 0;
 	 	}
+	
+// Counter for ID
+
+	Class ObjCounter() {
+	
+		private static int instanceCounter = 0;
+		int counter = 0;
+		
+	      ObjCounter() {
+	      	
+		  instanceCounter++;
+		  counter = instanceCounter;
+	     }
+	 }    
+		 	      
 }
