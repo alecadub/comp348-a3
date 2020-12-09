@@ -1,6 +1,7 @@
 public interface Shape {
     // Uncomment the following (required by 4.2.5)
-// int getId();
+    int getId();
+
     String getName();
 
     double getPerimeter();

@@ -12,8 +12,8 @@ public class Main {
                     " is " + s.getPerimeter());
             s = (Shape) new Circle(2);
             System.out.println("The area of " + s + " is " + s.getArea());
-// Uncomment the following (required by 4.2.5)
-// System.out.println("The last shape ID: " + s.getId());
+            // Uncomment the following (required by 4.2.5)
+            System.out.println("The last shape ID: " + s.getId());
         } catch (Exception e) {
             System.out.println("Error: " + e.getMessage());
         }
