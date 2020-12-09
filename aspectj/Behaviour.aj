@@ -10,6 +10,14 @@ public privileged aspect Behaviour {
         return "Circle";
     }
 
+    // Override toString() method
+    public String Circle.toString() {
+        return (this.getName() + "(" + (int) this.radius + ")");
+    }
+    public String Rectangle.toString() {
+        return (this.getName() + "(" + (int) this.width + "," + (int) this.height + ")");
+    }
+
 // Implement the logic for calculating the area of a circle
 
     pointcut callCircleGetArea(Circle c): execution(double Circle.getArea()) && this(c);
